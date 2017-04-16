@@ -1,5 +1,9 @@
 import java.util.Scanner;
 
+/*
+ * 07-03
+ */
+
 class MakeChange {
 
    public static void main(String args[]) {
@@ -28,5 +32,8 @@ class MakeChange {
       System.out.println(dimes + " dimes");
       System.out.println(nickels + " nickels");
       System.out.println(cents + " cents");
+      
+      myScanner.close();
+      
    }
 }
