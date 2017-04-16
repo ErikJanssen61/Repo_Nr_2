@@ -1,6 +1,10 @@
 import java.util.Scanner;
 import static java.lang.System.out;
 
+/*
+ * 18-02 tweede poging
+ */
+
 class ProcessMoreData {
 
     public static void main(String args[]) {
@@ -29,5 +33,7 @@ class ProcessMoreData {
         out.print(" is ");
         out.print(total);
         out.println(".");
+        
+        myScanner.close();
     }
 }
