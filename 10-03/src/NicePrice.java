@@ -1,5 +1,10 @@
 import java.util.Scanner;
 
+/*
+ * My first commit without a push DID update the remote repo and that was unexpected
+ * 10-03
+ */
+
 class NicePrice {
 
     public static void main(String args[]) {
