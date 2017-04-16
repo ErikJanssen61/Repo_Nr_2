@@ -1,17 +1,13 @@
 /*
- * This code works correctly!
- * 12-05
+ * This code almost works, but there's one tiny error:
  */
 import java.util.Scanner;
 
-class GetUserName {
+class SecondAttempt {
 
     public static void main(String args[]) {
         Scanner myScanner = new Scanner(System.in);
-        char symbol;
-
-        symbol = myScanner.findWithinHorizon(".",0)
-                                          .charAt(0);
+        char symbol = ' ';
 
         while (symbol != '@') {
             System.out.print(symbol);
@@ -20,6 +16,5 @@ class GetUserName {
         }
 
         System.out.println();
-        myScanner.close();
     }
 }
