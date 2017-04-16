@@ -1,6 +1,10 @@
 import java.util.Scanner;
 import java.util.Random;
 
+/*
+ * 09-02
+ */
+
 class AnswerYesOrNo {
 
   public static void main(String args[]) {
@@ -17,6 +21,7 @@ class AnswerYesOrNo {
       System.out.println("Yes. Isn't it obvious?");
     } else {
       System.out.println("No, and don't ask again.");
+      myScanner.close();
     }
   }
 }

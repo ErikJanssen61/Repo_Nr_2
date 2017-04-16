@@ -2,6 +2,10 @@ import java.util.Scanner;
 import java.util.Random;
 import static java.lang.System.out;
 
+/*
+ * 11-01
+ */
+
 class TheOldSwitcheroo {
 
     public static void main(String args[]) {
@@ -69,5 +73,6 @@ class TheOldSwitcheroo {
         }
 
         out.println("Goodbye");
+        myScanner.close();
     }
 }

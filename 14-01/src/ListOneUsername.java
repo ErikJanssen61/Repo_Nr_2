@@ -3,6 +3,10 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintStream;
 
+/*
+ * 14-01
+ */
+
 class ListOneUsername {
 
    public static void main(String args[]) 
@@ -24,5 +28,8 @@ class ListOneUsername {
       }
 
       diskWriter.println();
+      
+      diskScanner.close(); 
+      diskWriter.close();
    }
 }
