@@ -11,7 +11,7 @@ class AuntEdnaDoesItAgain {
     public static void main(String args[]) {
         int count;
 
-        for (count = 0; count < 10; count++) {
+        for (count = 0; count < 4; count++) {
             out.print("I've chewed ");
             out.print(count);
             out.println(" time(s).");

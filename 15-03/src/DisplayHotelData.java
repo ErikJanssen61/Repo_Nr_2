@@ -3,6 +3,10 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import static java.lang.System.out;
 
+/*
+ * 15-03
+ */
+
 class DisplayHotelData {
 
    public static void main(String args[]) 
@@ -22,6 +26,7 @@ class DisplayHotelData {
          }
 
          out.println();
+         diskScanner.close();
       }
    }
 }
