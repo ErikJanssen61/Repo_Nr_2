@@ -12,23 +12,22 @@ class DisplayHotelData {
    public static void main(String args[]) 
       throws FileNotFoundException 		{
 
-      //Scanner diskScanner = new Scanner(new File("hotelData"));
+      Scanner diskScanner = new Scanner(new File("hotelData"));
 
       for (int floor = 1; floor <= 9; floor++) {
-    	  Scanner diskScanner = new Scanner(new File("hotelData"));
     	  out.print("Floor ");
           out.print(floor);
           out.print(":  |");
          
-         for (int roomNum = 1; roomNum <= 12; roomNum++) 
-         {
-        	
-        	 out.print(diskScanner.nextInt());
+         for (int roomNum = 1; roomNum <= 20; roomNum++) 
+         {	 Scanner diskScanner1 = new Scanner(new File("hotelData"));
+        	 out.print(diskScanner1.nextInt());
              out.print('|');
           }
 
          out.println();
          diskScanner.close();
+         //diskScanner1.close();
       }
    }
 }
