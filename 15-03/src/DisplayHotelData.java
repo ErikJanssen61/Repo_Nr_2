@@ -10,23 +10,51 @@ import static java.lang.System.out;
 class DisplayHotelData {
 
    public static void main(String args[]) 
-      throws FileNotFoundException {
+      throws FileNotFoundException 		{
 
-      Scanner diskScanner = 
-          new Scanner(new File("hotelData"));
+      //Scanner diskScanner = new Scanner(new File("hotelData"));
 
       for (int floor = 1; floor <= 9; floor++) {
-         out.print("Floor ");
-         out.print(floor);
-         out.print(":  ");
-
-         for (int roomNum = 1; roomNum <= 20; roomNum++) {
-            out.print(diskScanner.nextInt());
-            out.print(' ');
-         }
+    	  Scanner diskScanner = new Scanner(new File("hotelData"));
+    	  out.print("Floor ");
+          out.print(floor);
+          out.print(":  |");
+         
+         for (int roomNum = 1; roomNum <= 12; roomNum++) 
+         {
+        	
+        	 out.print(diskScanner.nextInt());
+             out.print('|');
+          }
 
          out.println();
          diskScanner.close();
       }
    }
 }
+/*
+public static void main(String args[]) 
+	      throws FileNotFoundException {
+
+	         for (int floor = 1; floor <= 5; floor++) {
+	         out.print("Floor ");
+	         out.print(floor);
+	         out.print(":  ");
+	         
+		         for (int roomNum = 1; roomNum <= 10; roomNum++) {
+		            out.print(roomNum);
+		            out.print('|');
+		            //roomNum = 1;
+		            
+			         for (int subNum = 1; subNum <=3; subNum++) {
+			        	 out.print('/'); 
+			        	 out.print(subNum);
+			        	 out.print(' ');
+			         }
+	         }
+
+	         out.println();
+	         //diskScanner.close();
+	      }
+	   }
+	}*/
